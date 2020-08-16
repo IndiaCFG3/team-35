@@ -1,5 +1,5 @@
 <?php
-$to = "swewebsite123.com";
+$to = $email;
 $subject = "HTML email";
 
 $message = "
@@ -8,17 +8,8 @@ $message = "
 <title>HTML email</title>
 </head>
 <body>
-<p>This email contains HTML Tags!</p>
-<table>
-<tr>
-<th>Firstname</th>
-<th>Lastname</th>
-</tr>
-<tr>
-<td>John</td>
-<td>Doe</td>
-</tr>
-</table>
+<p>You are registered for Anudip Foundation</p>
+
 </body>
 </html>
 ";
@@ -32,8 +23,9 @@ $headers .= 'From: <webmaster@example.com>' . "\r\n";
 $headers .= 'Cc: myboss@example.com' . "\r\n";
 
 
-if (mail($to,$subject,$message,$headers)) {
-   echo "Email successfully sent to $to!!!";
+if (mail($email,$subject,$message,$headers)) {
+   echo "Email successfully sent to $email!!!";
+//    header("Location:mob-first.html");
 } 
 else {
         echo "Email sending failed...";
