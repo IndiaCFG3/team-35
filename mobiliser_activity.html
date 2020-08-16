@@ -7,6 +7,18 @@
 		<link rel="stylesheet" href="mobiliser_activity.css">
 
 		<style>
+			#myfile{
+				padding:10px 10px;
+			}
+			input[type=text], input[type=password],textarea{
+				
+				width: 25%;
+				padding: 12px 20px;
+				margin: 8px 5px;
+				display: inline-block;
+				border: 1px solid #ccc;
+				box-sizing: border-box;
+			}
 			#grid{
 				background-color:white;
 				display:grid;
@@ -17,10 +29,11 @@
 			}
 
 			.grid-item{
-				background-color:green;
+				background-color: gray;
 				font-size:20px;
 				padding:20px;
 				text-align:center;
+				display: block;
 			}
 
 			button{
@@ -51,18 +64,18 @@
 
 	</head>
 	<body>
-		<h1>MOBILISER PAGE</h1>
-		<hr><h2>Activities<hr>
+		<h2>Mobiliser Activities Page</h2>
+		
 	
  		<form action="" method="get">
   			<div class="container">
   				<h3>Please fill in this form to create new target</h3>
 
-  				<br><h4>Enter date<input name="date" type="text" placeholder="date in (D/M/Y) format">	
+  				<br><h4>Enter date:<input name="date" type="text" placeholder="date in (D/M/Y) format">	
   				<br>
-  				<br><h4>Enter activity name<input name="activity" type="text" placeholder="next target activity">
+  				<br><h4>Enter activity name:<input name="activity" type="text" placeholder="next target activity">
 
-  				<br><h4>Description of target activity(in short)<textarea rows="3" name="description" type="text" placeholder="description of target activity"></textarea>
+  				<br><h4>Description of target activity(in short):<textarea rows="3" name="description" type="text" placeholder="description of target activity"></textarea>
   				<br>
   				<br>
   				<input type="submit" value="Submit">
@@ -70,9 +83,9 @@
 		</form> 
 
 		<div id="grid">
-			<div class="grid-item"><h2>Previous activities</h2><hr><hr><button><a href="https://google.com">Click here !!</a></button></div>
+			<div class="grid-item"><h2>Previous activities</h2><br><button><a href="https://google.com">Click here !!</a></button></div>
 			<div class="grid-item">
-				<h2>Upload Google form</h2><hr><hr>
+				<h2>Upload Google form</h2><br>
 				<button>
 				<form action=" ">
 		  		<input type="file" id="myFile" name="filename"></button>
