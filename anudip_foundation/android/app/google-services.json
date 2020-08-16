@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "53789299411",
+    "firebase_url": "https://anudipcodeforgood.firebaseio.com",
+    "project_id": "anudipcodeforgood",
+    "storage_bucket": "anudipcodeforgood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53789299411:android:5263dc0ad7e5b587bb7a26",
+        "android_client_info": {
+          "package_name": "shivaguntoji.anudip_foundation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53789299411-re0sdp807g699he9fa2dig1ekphlf4ai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBVJzJZcFA3BenJCxCuamkaGFdlp6qeVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53789299411-re0sdp807g699he9fa2dig1ekphlf4ai.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
