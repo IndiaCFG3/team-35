@@ -37,7 +37,7 @@ class _StudentDetailsProviderState extends State<StudentDetailsProvider> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               RoundedInputField(
-                hintText: "Coarse",
+                hintText: "Course",
                 onChanged: (value) {
                   course = value;
                 },

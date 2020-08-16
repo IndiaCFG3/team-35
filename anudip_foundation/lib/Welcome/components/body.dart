@@ -1,4 +1,5 @@
 import 'package:anudip_foundation/Login/login_screen.dart';
+import 'package:anudip_foundation/LoginOm.dart';
 import 'package:anudip_foundation/Welcome/components/background.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -43,7 +44,7 @@ class Body extends StatelessWidget {
                 height: 10,
               ),
               RoundedButton(
-                text: "LOGIN",
+                text: "MOBILISER LOGIN",
                 press: () {
                   Navigator.push(
                     context,
@@ -56,7 +57,7 @@ class Body extends StatelessWidget {
                 },
               ),
               RoundedButton(
-                text: "WEBSITE",
+                text: "MANAGER LOGIN",
                 color: kPrimaryLightColor,
                 textColor: Colors.black,
                 press: () {
@@ -64,7 +65,7 @@ class Body extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) {
-                        return null;
+                        return LoginOm();
                       },
                     ),
                   );

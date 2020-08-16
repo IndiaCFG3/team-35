@@ -19,6 +19,13 @@ class CrudeMethods {
   {
     return await Firestore.instance.collection("ImageCollection").snapshots();
   }
+  Future getMobaliserData() async
+  {
+    return await Firestore.instance.collection("mobiliser").snapshots();
+  }
+  getSearchedNameUid()async{
+    return await Firestore.instance.collection("students").snapshots();
+  }
   getSearchedData(String searchField) async {
     searchField = searchField.trim();
     return await Firestore.instance.collection(
