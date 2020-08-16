@@ -51,20 +51,21 @@
 
 	</head>
 	<body>
-		<!-- <div> -->
-		<h1 id="intro">MOBILISER PAGE</h1>
-
+		<h1>MOBILISER PAGE</h1>
 		<hr><h2>Activities<hr>
 	
- 		<form action="action_page.php">
+ 		<form action="" method="get">
   			<div class="container">
   				<h3>Please fill in this form to create new target</h3>
 
-  				<br><h4>Enter date<input name="date" type="text" placeholder="date in (D/M/Y) format"><input type="submit"></h4>		
-  				
-  				<br><h4>Enter activity name<input name="activity" type="text" placeholder="next target activity"><input type="submit"></h4>
+  				<br><h4>Enter date<input name="date" type="text" placeholder="date in (D/M/Y) format">	
+  				<br>
+  				<br><h4>Enter activity name<input name="activity" type="text" placeholder="next target activity">
 
-  				<br><h4>Description of target activity(in short)<input name="description" type="text" placeholder="description of next target activity"><input type="submit"></h4>
+  				<br><h4>Description of target activity(in short)<textarea rows="3" name="description" type="text" placeholder="description of target activity"></textarea>
+  				<br>
+  				<br>
+  				<input type="submit" value="Submit">
   			</div>
 		</form> 
 
@@ -73,11 +74,10 @@
 			<div class="grid-item">
 				<h2>Upload Google form</h2><hr><hr>
 				<button>
-				<form action="/action_page.php">
+				<form action=" ">
 		  		<input type="file" id="myFile" name="filename"></button>
 				</form>
 			</div>
 		</div>
-
 	</body>
 </html>
