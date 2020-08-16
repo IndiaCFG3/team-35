@@ -1,0 +1,75 @@
+<meta charset="UTF-8">
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<title>mobilizer_activity</title>
+		<link rel="stylesheet" href="mobilizer_activity.css">
+
+		<style>
+			#grid{
+				background-color:white;
+				display:grid;
+				padding:100px;
+				grid-column-gap:200px;
+				grid-row-gap:100px;
+				grid-template-columns:auto auto;
+			}
+
+			.grid-item{
+				background-color:green;
+				font-size:20px;
+				padding:20px;
+				text-align:center;
+			}
+
+			button{
+				width:300px;
+				height:50px;
+				font-size:24px;
+				background-color:white;
+				margin:10px;
+			}
+			button:hover{
+				background-color:orange;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+		<h1 id="intro">MOBILIZER PAGE</h1>
+
+		<hr>
+		<h2>Activities
+		<hr>
+		</h2>
+
+ 		<form action="action_page.php">
+  			<div class="container">
+  				<h3>Please fill in this form to create new target</h3>
+
+  				<br><h4>Enter date<input name="date" type="text" placeholder="date in (D/M/Y) format"><input type="submit"></h4>		
+  				
+  				<br><h4>Enter activity name<input name="activity" type="text" placeholder="next target activity"><input type="submit"></h4>
+
+  				<br><h4>Description of target activity(in short)<input name="description" type="text" placeholder="description of next target activity"><input type="submit"></h4>
+
+  			</div>
+		</form> 
+
+
+
+		<div id="grid">
+			<div class="grid-item"><h2>Previous activities</h2><hr><hr><button><a href="https://google.com">Click here !!</a></button></div>
+			<div class="grid-item">
+				<h2>Upload Google form</h2><hr><hr>
+				<button>
+				<form action="/action_page.php">
+		  		<input type="file" id="myFile" name="filename"></button>
+				</form>
+				
+			</div>
+
+	</body>
+</html>

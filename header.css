@@ -1,0 +1,13 @@
+<style>.thumbnail img {
+    width: 100%;
+}
+.thumbnail {
+    padding: 0;
+}
+.thumbnail .caption-full {
+    padding: 9px;
+}
+  .signn { text-align: center;}
+#delete-form {
+    display: inline;
+}</style>
